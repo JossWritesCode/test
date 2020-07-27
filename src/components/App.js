@@ -1,6 +1,5 @@
 import React from "react";
 
-import "../index.css";
 import SideMenu from "./SideMenu";
 function App() {
   return (
