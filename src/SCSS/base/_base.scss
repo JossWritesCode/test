@@ -21,3 +21,10 @@ body {
   text-decoration: none;
   color: inherit;
 }
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

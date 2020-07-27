@@ -1,0 +1,28 @@
+.side-menu {
+  background-color: $color-blue;
+  color: $color-white;
+  width: 320px;
+  min-width: 320px;
+
+  .section {
+    background-color: $color-blue;
+    display: flex;
+    fill: $color-white;
+    border-bottom: 3px solid $color-dark-blue;
+
+    img {
+      margin-right: 1rem;
+      color: $color-white;
+
+      fill: $color-white;
+      margin-left: 1rem;
+    }
+
+    .title {
+      font-size: 2.2rem;
+    }
+  }
+  .section:last-child {
+    border-bottom: none;
+  }
+}
