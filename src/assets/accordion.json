@@ -1,53 +1,53 @@
 {
-    "employees": [
-      {
-        "name": "Mary Sue"
-      },
-      {
-        "name": "Martin Stuart"
-      }
-    ],
-    "messages": [
-      {
-        "content": "Hey boss, give me a raise!",
-        "date": "2020-04-06",
-        "employee": { "name": "Mary Sue" }
-      },
-      {
-        "content": "The project was a success... I think?",
-        "date": "2020-04-05",
-        "employee": { "name": "Martin Stuart" }
-      },
-      {
-        "content": "I think Martin nuked our EC2 instance! But I fixed it",
-        "date": "2020-04-04",
-        "employee": { "name": "Mary Sue" }
-      }
-    ],
-    "notifications": [
-      {
-        "content": "Your project 'Entropy API' has been deleted",
-        "source": "Github",
-        "date": "2020-04-04"
-      },
-      {
-        "content": "Warning! Are you sure you want to delete the 'Entropy API' EC2 instance",
-        "source": "Amazon",
-        "date": "2020-04-04"
-      }
-    ],
-    "toDoList": [
-      {
-        "content": "Recreate 'Entropy API' EC2 instance",
-      },
-      {
-        "content": "Train Martin how to use AWS",
-      },
-      {
-        "content": "Discuss salary with Mary",
-      },
-      {
-        "content": "Hire a web developer with Azure experience",
-      }
-    ]
-  }
+  "employees": [
+    {
+      "name": "Mary Sue"
+    },
+    {
+      "name": "Martin Stuart"
+    }
+  ],
+  "messages": [
+    {
+      "content": "Hey boss, give me a raise!",
+      "date": "2020-04-06",
+      "employee": { "name": "Mary Sue" }
+    },
+    {
+      "content": "The project was a success... I think?",
+      "date": "2020-04-05",
+      "employee": { "name": "Martin Stuart" }
+    },
+    {
+      "content": "I think Martin nuked our EC2 instance! But I fixed it",
+      "date": "2020-04-04",
+      "employee": { "name": "Mary Sue" }
+    }
+  ],
+  "notifications": [
+    {
+      "content": "Your project 'Entropy API' has been deleted",
+      "source": "Github",
+      "date": "2020-04-04"
+    },
+    {
+      "content": "Warning! Are you sure you want to delete the 'Entropy API' EC2 instance",
+      "source": "Amazon",
+      "date": "2020-04-04"
+    }
+  ],
+  "toDoList": [
+    {
+      "content": "Recreate 'Entropy API' EC2 instance"
+    },
+    {
+      "content": "Train Martin how to use AWS"
+    },
+    {
+      "content": "Discuss salary with Mary"
+    },
+    {
+      "content": "Hire a web developer with Azure experience"
+    }
+  ]
+}
