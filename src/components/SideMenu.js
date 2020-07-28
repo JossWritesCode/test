@@ -14,8 +14,10 @@ function SideMenu() {
     "Notifications",
     "To do list",
   ];
+  const arrayOfMenuProperties = [];
   for (let property in sideMenuData) {
     arrayOfMenuData.push(sideMenuData[property]);
+    arrayOfMenuProperties.push(property);
   }
   const arrayOfLogoLinks = [
     EmployeesIcon,
@@ -23,6 +25,7 @@ function SideMenu() {
     NotificationsIcon,
     ToDoListIcon,
   ];
+
   return (
     <div className="side-menu">
       {arrayOfMenuNames.map((section, index) => (
@@ -30,6 +33,8 @@ function SideMenu() {
           sectionData={arrayOfMenuData[index]}
           sectionName={section}
           logoLink={arrayOfLogoLinks[index]}
+          menuProperty={arrayOfMenuProperties[index]}
+          sideMenuData={sideMenuData}
         />
       ))}
     </div>

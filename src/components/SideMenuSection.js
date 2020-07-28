@@ -2,9 +2,22 @@ import React, { useState } from "react";
 
 import SideMenuSubItem from "./SideMenuSubItem";
 
-function SideMenuSection({ sectionData, sectionName, logoLink }) {
+function SideMenuSection({
+  sectionData,
+  sectionName,
+  logoLink,
+  menuProperty,
+  deleteItem,
+  sideMenuData,
+}) {
   const [toggle, setToggle] = useState(false);
   const [numberOfItems, setNumberOfItems] = useState(sectionData.length);
+
+  function deleteItem(property, index) {
+    delete sideMenuData[property][index];
+    setNumberOfItems(numberOfItems - 1);
+    console.log(property, index);
+  }
   return (
     <section className="section">
       <div onClick={() => setToggle(!toggle)} className="section-header">
@@ -15,7 +28,13 @@ function SideMenuSection({ sectionData, sectionName, logoLink }) {
       {toggle ? (
         <div className="accordion-section">
           {sectionData.map((info, index) => (
-            <SideMenuSubItem subItemInfo={info} />
+            <SideMenuSubItem
+              menuProperty={menuProperty}
+              deleteItem={deleteItem}
+              subItemInfo={info}
+              key={index}
+              index={index}
+            />
           ))}
         </div>
       ) : null}

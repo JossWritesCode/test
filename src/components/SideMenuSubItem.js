@@ -1,7 +1,7 @@
 import React from "react";
 import XIcon from "../assets/icons/icon-x.svg";
 
-function SideMenuSubItem({ subItemInfo }) {
+function SideMenuSubItem({ subItemInfo, deleteItem, menuProperty, index }) {
   return (
     <div className="sub-menu-item">
       <div className="sub-menu-item-list">
@@ -23,7 +23,11 @@ function SideMenuSubItem({ subItemInfo }) {
           </p>
         </div>
       </div>
-      <img src={XIcon} alt="close" />
+      <img
+        onClick={() => deleteItem(menuProperty, index)}
+        src={XIcon}
+        alt="close"
+      />
     </div>
   );
 }
