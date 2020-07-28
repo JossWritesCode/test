@@ -52,3 +52,11 @@
     }
   }
 }
+
+.sub-information {
+  display: flex;
+  color: $color-smoke-white;
+  p {
+    margin-right: 0.5rem;
+  }
+}
