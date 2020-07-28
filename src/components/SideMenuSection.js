@@ -7,7 +7,7 @@ function SideMenuSection({
   sectionName,
   logoLink,
   menuProperty,
-  deleteItem,
+
   sideMenuData,
 }) {
   const [toggle, setToggle] = useState(false);
@@ -22,7 +22,7 @@ function SideMenuSection({
     if (menuProperty === "employees") {
       setToggle(true);
     }
-  }, []);
+  }, [menuProperty]);
 
   return (
     <section className={`section ${toggle ? "" : "bottom-border"}`}>

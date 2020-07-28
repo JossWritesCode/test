@@ -7,24 +7,33 @@ import NotificationsIcon from "../assets/icons/icon-notifications.svg";
 import ToDoListIcon from "../assets/icons/icon-todolist.svg";
 
 function SideMenu() {
+  //array of the menu data that the menu sections will need
   const arrayOfMenuData = [];
+
+  //array of menu property names (needed for later deleting items from json file)
+  const arrayOfMenuProperties = [];
+
+  //array of titles
   const arrayOfMenuNames = [
     "Employees",
     "Messages",
     "Notifications",
     "To do list",
   ];
-  const arrayOfMenuProperties = [];
-  for (let property in sideMenuData) {
-    arrayOfMenuData.push(sideMenuData[property]);
-    arrayOfMenuProperties.push(property);
-  }
+
+  // array of links to the icons
   const arrayOfLogoLinks = [
     EmployeesIcon,
     MessagesIcon,
     NotificationsIcon,
     ToDoListIcon,
   ];
+
+  // pushing the data into the arrays
+  for (let property in sideMenuData) {
+    arrayOfMenuData.push(sideMenuData[property]);
+    arrayOfMenuProperties.push(property);
+  }
 
   return (
     <div className="side-menu">
