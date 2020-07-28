@@ -61,16 +61,19 @@
     padding: 1.5rem 2rem;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     border-bottom: 3px solid $color-light-grey;
 
     .sub-menu-item-name,
     .sub-menu-item-content {
       font-weight: bold;
+      max-width: 225px;
+      font-size: 1.2rem;
     }
     img {
       width: 14px;
       height: 14px;
+      margin-top: 2rem;
     }
   }
 }
@@ -78,7 +81,11 @@
 .sub-information {
   display: flex;
   color: $color-smoke-white;
+  margin: 0;
+  padding: 0;
   p {
     margin-right: 0.5rem;
+    margin-left: 0;
+    padding-left: 0;
   }
 }
