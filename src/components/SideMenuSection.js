@@ -33,6 +33,7 @@ function SideMenuSection({
       </div>
       {toggle ? (
         <div className="accordion-section">
+          <div className="blue-triangle"></div>
           {sectionData.map((info, index) => (
             <SideMenuSubItem
               menuProperty={menuProperty}
