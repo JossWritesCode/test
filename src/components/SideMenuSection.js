@@ -25,7 +25,7 @@ function SideMenuSection({
   }, []);
 
   return (
-    <section className="section">
+    <section className={`section ${toggle ? "" : "bottom-border"}`}>
       <div onClick={() => setToggle(!toggle)} className="section-header">
         <img alt={sectionName} src={logoLink} />
         <h2 className="title">{sectionName}</h2>
