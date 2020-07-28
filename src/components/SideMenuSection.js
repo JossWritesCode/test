@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import SideMenuSubItem from "./SideMenuSubItem";
 
@@ -16,8 +16,14 @@ function SideMenuSection({
   function deleteItem(property, index) {
     delete sideMenuData[property][index];
     setNumberOfItems(numberOfItems - 1);
-    console.log(property, index);
   }
+
+  useEffect(() => {
+    if (menuProperty === "employees") {
+      setToggle(true);
+    }
+  }, []);
+
   return (
     <section className="section">
       <div onClick={() => setToggle(!toggle)} className="section-header">
