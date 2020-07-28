@@ -13,7 +13,7 @@ function SideMenuSubItem({ subItemInfo }) {
           {subItemInfo.content ? subItemInfo.content : null}
         </p>
         <p className="sub-menu-item-employee">
-          {subItemInfo.employee ? subItemInfo.employee : null}
+          {subItemInfo.employee ? subItemInfo.employee.name : null}
         </p>
         <p className="sub-menu-item-source">
           {subItemInfo.source ? subItemInfo.source : null}
