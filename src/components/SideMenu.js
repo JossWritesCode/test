@@ -44,6 +44,7 @@ function SideMenu() {
           logoLink={arrayOfLogoLinks[index]}
           menuProperty={arrayOfMenuProperties[index]}
           sideMenuData={sideMenuData}
+          key={index}
         />
       ))}
     </div>
